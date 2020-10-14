@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function foo(){
+        var a = document.getElementById("input").value;
+        if(a==0){alert("0입니다.");}
+        else if(a>0){alert("양수입니다.");}
+        else{alert("음수입니다.");}
+    };
+    function foo2(n1,n2){
+        var a = document.getElementById("input2").value;
+        if(a.length>=n1 && a.length<=n2){alert("참입니다.");}
+        else{alert("거짓입니다.");}
+    };
+</script>
+<body>
+    <input type="text" id="input">
+    <input type="button" value="click" onclick="foo()">
+    <input type="text" id="input2">
+    <input type="button" value="click" onclick="foo2(3,7)">
+</body>
+</html>
